@@ -1,0 +1,40 @@
+{
+    "name": "Buku",
+    "fields": [
+        {
+            "fieldName": "judulBuku",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 100
+        },
+        {
+            "fieldName": "kategori",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 50
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "mahasiswa",
+            "otherEntityRelationshipName": "buku",
+            "relationshipName": "mahasiswa",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190918140158",
+    "entityTableName": "buku",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "mySuffix"
+}

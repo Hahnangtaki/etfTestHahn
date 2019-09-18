@@ -1,0 +1,25 @@
+{
+  "etfTestApp": {
+    "mahasiswa": {
+      "home": {
+        "title": "Mahasiswas",
+        "createLabel": "Create a new Mahasiswa",
+        "createOrEditLabel": "Create or edit a Mahasiswa",
+        "notFound": "No Mahasiswas found"
+      },
+      "created": "A new Mahasiswa is created with identifier {{ param }}",
+      "updated": "A Mahasiswa is updated with identifier {{ param }}",
+      "deleted": "A Mahasiswa is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mahasiswa {{ id }}?"
+      },
+      "detail": {
+        "title": "Mahasiswa"
+      },
+      "nim": "Nim",
+      "nama": "Nama",
+      "alamat": "Alamat",
+      "buku": "Buku"
+    }
+  }
+}
