@@ -1,0 +1,26 @@
+entity Mahasiswa {
+	nim String minlength(5) maxlength(5) unique,
+	nama String maxlength(50),
+    alamat String maxlength(500)
+}
+
+entity Buku {
+	judulBuku String maxlength(100),
+    kategori String maxlength(50)
+}
+
+relationship OneToMany {
+	Mahasiswa to Buku
+}
+
+
+// Set pagination options
+paginate Mahasiswa with pagination
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+angularSuffix * with mySuffix
